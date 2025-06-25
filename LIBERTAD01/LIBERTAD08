@@ -1,0 +1,4 @@
+# Mostrar totales
+def mostrar_totales():
+    print(f"Entradas disponibles: {stock_func1 + stock_func2}")
+    print(f"Entradas vendidas: {(150 - stock_func1) + (180 - stock_func2)}")
