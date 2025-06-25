@@ -1,0 +1,4 @@
+# Stocks iniciales
+stock_func1 = 150
+stock_func2 = 180
+compradores = {}
