@@ -1,0 +1,6 @@
+# Creamos el bloque de código para la opción 3
+def mostrar_totales():
+    total_dispo = stock_func1 + stock_func2
+    total_vendidas = (150 - stock_func1) + (180 - stock_func2)
+    print(f"Entradas disponibles: {total_dispo}")
+    print(f"Entradas vendidas: {total_vendidas}")
