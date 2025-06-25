@@ -1,0 +1,16 @@
+# Comprar entrada
+def comprar_entrada(nombre, funcion):
+    global stock_func1, stock_func2
+    if nombre in compradores:
+        return "Error: Nombre ya registrado."
+    
+    if funcion == "1" and stock_func1 > 0:
+        compradores[nombre] = "Viernes"
+        stock_func1 -= 1
+        return "Compra exitosa para el viernes."
+    elif funcion == "2" and stock_func2 > 0:
+        compradores[nombre] = "Sábado"
+        stock_func2 -= 1
+        return "Compra exitosa para el sábado."
+    else:
+        return "No hay entradas disponibles."
