@@ -1,0 +1,31 @@
+# Bucle principal
+def menu():
+    while True:
+        print("/n--- Cartelera teatro CafeConLeche y sus distintos musicales.---")
+        print("1. Comprar entrada")
+        print("2. Cambio de función")
+        print("3. Mostrar totales")
+        print("4. Salir")
+        opc = input("Selecciona una opción: ")
+
+        if opc == "1":
+            nombre = input("Ingresa tu nombre: ")
+            funcion = input("Selecciona la función (1.Día Viernes, 2.Día Sábado): ")
+            print(comprar_entrada(nombre, funcion))
+
+        elif opc == "2":
+            nombre = input("Ingresa tu nombre para cambiar de función: ")
+            print(cambiar_funcion(nombre))
+
+        elif opc == "3":
+            mostrar_totales()
+
+        elif opc == "4":
+            print("Programa terminado...")
+            break
+
+        else:
+            print("Debe ingresar una opción válida!!")
+
+menu()
+
