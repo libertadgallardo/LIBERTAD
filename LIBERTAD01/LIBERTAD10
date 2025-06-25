@@ -1,0 +1,26 @@
+# Menú principal
+def menu():
+    while True:
+        print("\n--- Teatro CATS ---")
+        print("1. Comprar entrada")
+        print("2. Cambiar función")
+        print("3. Ver totales")
+        print("4. Salir")
+        opcion = input("Opción: ")
+
+        if opcion == "1":
+            nombre = input("Nombre: ")
+            funcion = input("Función (1=Viernes, 2=Sábado): ")
+            print(comprar_entrada(nombre, funcion))
+        elif opcion == "2":
+            nombre = input("Nombre: ")
+            print(cambiar_funcion(nombre))
+        elif opcion == "3":
+            mostrar_totales()
+        elif opcion == "4":
+            print("Fin del programa.")
+            break
+        else:
+            print("Opción inválida.")
+
+menu()
